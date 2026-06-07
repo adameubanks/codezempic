@@ -1,5 +1,5 @@
 .landing {
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
@@ -115,7 +115,7 @@
 
 .example-panels {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0;
 }
 
@@ -123,8 +123,10 @@
   padding: 1rem 1.25rem;
   font-size: 0.8rem;
   line-height: 1.5;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: 320px;
+  min-width: 0;
 }
 
 .example-panel.before {
@@ -147,6 +149,9 @@
 .example-panel pre {
   margin: 0;
   background: transparent !important;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: hidden;
 }
 
 .footer {
