@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatment Room | Codezempic</title>
+  </head>
+  <body class="app-page">
+    <header class="app-header">
+      <div class="app-header-left">
+        <a href="./index.html">
+          <img src="/logo.svg" alt="Codezempic" />
+        </a>
+        <h1>Codezempic</h1>
+      </div>
+      <a href="./index.html" class="btn btn-outline">← Back to Home</a>
+    </header>
+
+    <main class="app-main">
+      <div class="controls">
+        <div id="dose-selector" class="dose-selector"></div>
+        <select id="lang-select" class="lang-select" title="Language">
+          <option value="javascript">JavaScript</option>
+          <option value="typescript">TypeScript</option>
+          <option value="python">Python</option>
+          <option value="go">Go</option>
+          <option value="ruby">Ruby</option>
+        </select>
+        <button id="administer-btn" class="btn btn-primary">Administer Dose</button>
+      </div>
+
+      <div id="progress-wrap" class="progress-wrap">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-label" class="progress-label">Applying dose...</span>
+      </div>
+
+      <div id="error-banner" class="error-banner"></div>
+
+      <div class="editor-wrap">
+        <div class="editor-panel">
+          <div class="editor-panel-header">
+            <span>Original (thicc)</span>
+            <div class="editor-panel-actions" aria-hidden="true"></div>
+          </div>
+          <div class="editor-body">
+            <div id="code-input" class="editor-codemirror"></div>
+          </div>
+        </div>
+        <div class="editor-panel">
+          <div class="editor-panel-header">
+            <span>Skinnified</span>
+            <div class="editor-panel-actions">
+              <button id="copy-btn" class="btn btn-outline">Copy</button>
+              <button id="download-btn" class="btn btn-secondary">Download</button>
+            </div>
+          </div>
+          <div class="editor-body">
+            <pre id="code-output-scroll" class="editor-scroll"><code id="code-output-code"></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="stats-panel" class="stats-panel"></div>
+    </main>
+
+    <div id="drop-overlay" class="drop-overlay">Drop your bloated code here</div>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>

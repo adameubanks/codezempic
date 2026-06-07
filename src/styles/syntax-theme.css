@@ -1,0 +1,120 @@
+:root {
+  --syntax-base: #2D1B4E;
+  --syntax-comment: #8a7aa8;
+  --syntax-keyword: #E91E8C;
+  --syntax-string: #008f75;
+  --syntax-number: #b8860b;
+  --syntax-function: #c2187a;
+  --syntax-type: #7b5ea7;
+  --syntax-operator: #6b5b8a;
+  --syntax-punctuation: #9a8ab8;
+  --syntax-variable: #2D1B4E;
+  --syntax-builtin: #00C9A7;
+  --syntax-regex: #c9a000;
+  --syntax-tag: #E91E8C;
+  --syntax-attr: #00C9A7;
+  --syntax-selection: rgba(233, 30, 140, 0.14);
+}
+
+.editor-body .token.comment,
+.editor-body .token.prolog,
+.editor-body .token.doctype,
+.editor-body .token.cdata {
+  color: var(--syntax-comment);
+}
+
+.editor-body .token.punctuation {
+  color: var(--syntax-punctuation);
+}
+
+.editor-body .token.property,
+.editor-body .token.constant,
+.editor-body .token.symbol {
+  color: var(--syntax-variable);
+}
+
+.editor-body .token.tag,
+.editor-body .token.deleted {
+  color: var(--syntax-tag);
+}
+
+.editor-body .token.boolean,
+.editor-body .token.number {
+  color: var(--syntax-number);
+}
+
+.editor-body .token.selector,
+.editor-body .token.attr-name,
+.editor-body .token.string,
+.editor-body .token.char,
+.editor-body .token.inserted,
+.editor-body .token.attr-value {
+  color: var(--syntax-string);
+}
+
+.editor-body .token.builtin {
+  color: var(--syntax-builtin);
+}
+
+.editor-body .token.operator,
+.editor-body .token.entity,
+.editor-body .token.url,
+.editor-body .language-css .token.string,
+.editor-body .style .token.string {
+  color: var(--syntax-operator);
+}
+
+.editor-body .token.atrule,
+.editor-body .token.keyword {
+  color: var(--syntax-keyword);
+}
+
+.editor-body .token.function {
+  color: var(--syntax-function);
+}
+
+.editor-body .token.class-name {
+  color: var(--syntax-type);
+}
+
+.editor-body .token.regex,
+.editor-body .token.important,
+.editor-body .token.variable {
+  color: var(--syntax-regex);
+}
+
+.editor-body .token.namespace {
+  color: var(--syntax-type);
+  opacity: 0.85;
+}
+
+.editor-body .token.important,
+.editor-body .token.bold {
+  font-weight: 400;
+}
+
+.editor-body .token.italic {
+  font-style: italic;
+}
+
+.editor-body ::selection,
+.editor-codemirror ::selection {
+  background: var(--syntax-selection);
+}
+
+/* Alternate: add data-syntax-theme="soft" on <body> for a lighter pastel palette */
+body[data-syntax-theme='soft'] {
+  --syntax-comment: #a89bc4;
+  --syntax-keyword: #d946a8;
+  --syntax-string: #00a88a;
+  --syntax-number: #d4a017;
+  --syntax-function: #e056a0;
+  --syntax-type: #9370db;
+  --syntax-operator: #8878a8;
+  --syntax-punctuation: #b0a0c8;
+  --syntax-builtin: #2dd4b0;
+  --syntax-regex: #e6b800;
+  --syntax-tag: #d946a8;
+  --syntax-attr: #2dd4b0;
+  --syntax-selection: rgba(0, 201, 167, 0.16);
+}
