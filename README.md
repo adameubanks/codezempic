@@ -31,7 +31,7 @@ Output goes to `dist/` for GitHub Pages deployment.
 
 Pushes to `main` trigger GitHub Actions to build and deploy to the `gh-pages` branch.
 
-Site URL: `https://<username>.github.io/codezempic/`
+Site URL: https://adameubanks.github.io/codezempic/
 
 ## Side Effects
 
